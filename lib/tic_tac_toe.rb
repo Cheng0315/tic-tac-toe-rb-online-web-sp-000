@@ -59,3 +59,7 @@ def won?(board)
     board[combination[1]]== board[combination[2]]
   end
 end
+
+def full?(board)
+  turn_count(board) == 9
+end
