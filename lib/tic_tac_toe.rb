@@ -56,6 +56,6 @@ end
 def won?(board)
   WIN_COMBINATIONS.any? do |combination|
     board[combination[0]] == board[combination[1]] &&
-    board[combinarion[1]]== board[combination[2]]
+    board[combination[1]]== board[combination[2]]
   end
 end
