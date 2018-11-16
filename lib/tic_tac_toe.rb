@@ -48,3 +48,7 @@ end
 def turn_count(board)
   board.select {|ele| ele == "X" || ele == "O"}.length
 end
+
+def current_player
+  turn_count(board) % 2 == 0 ? "X" : "O"
+end
