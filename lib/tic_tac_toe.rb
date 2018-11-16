@@ -46,5 +46,5 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.select {|ele| ele == "X" || ele == "O"}
+  board.select {|ele| ele == "X" || ele == "O"}.length
 end
