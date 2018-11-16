@@ -77,7 +77,7 @@ def winner(board)
     "X"
   elsif won?(board) && turn_count(board) % 2 == 1
     "O"
-  else
+  elsif full?(board)
     nil
   end
 end
