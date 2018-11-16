@@ -63,3 +63,7 @@ end
 def full?(board)
   turn_count(board) == 9
 end
+
+def draw?(board)
+  full?(board) && !won?(board)
+end
