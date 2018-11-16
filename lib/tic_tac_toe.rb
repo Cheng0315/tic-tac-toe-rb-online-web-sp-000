@@ -73,9 +73,9 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) && current_player(board) == "X"
+  if won?(board) && turn_count(board) % 2 == 0
     "X"
-  elsif won?(board) && current_player(board) == "O"
+  elsif won?(board) && turn_count(board) % 2 == 1
     "O"
   else
     nil
