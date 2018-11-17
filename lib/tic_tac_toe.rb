@@ -84,7 +84,7 @@ end
 
 def play(board)
   puts "Please choose a number between 1-9:"
-    9.times doturn(board)
+    9.times do turn(board)
     if won?(board)
       winner(board)
     end
