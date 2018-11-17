@@ -73,11 +73,11 @@ def over?(board)
 end
 
 def winner(board)
-  if current_player(board) == "O" && won?(board)
-    "X"
-  elsif current_player(board) == "X" && won?(board)
-    "O"
-  elsif draw?(board)
+  if draw?(board)
     nil
+  elsif won?(board) && current_player(board) == "X"
+    "X"
+  elsif won?(board) && current_player(board) =="O"
+    "O"
   end
 end
