@@ -83,7 +83,7 @@ def winner(board)
 end
 
 def play(board)
-  until over?(board) do
+  until !over?(board) do
     puts "Please choose a number between 1-9:"
     turn(board)
     if won?(board)
