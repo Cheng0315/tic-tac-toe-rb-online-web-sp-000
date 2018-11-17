@@ -84,11 +84,8 @@ def winner(board)
 end
 
 def play(board)
-  until over?(board) do
+  until over?(board) && draw?(board) do
     turn(board)
-    if draw?(board)
-      puts "Cat's Game!"
-    end
   end
 
   if won?(board)
