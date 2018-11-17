@@ -88,7 +88,7 @@ def play(board)
     turn(board)
   end
 
-  if draw(board)
+  if draw?(board)
     puts "Cat's Game!"
   end
 end
