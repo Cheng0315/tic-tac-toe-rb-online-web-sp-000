@@ -74,7 +74,7 @@ end
 
 def winner(board)
   if current_player(board) == "O" && won?(board)
-    "O"
+    "X"
   elsif current_player(board) == "X" && won?(board)
     "X"
   elsif draw?(board)
