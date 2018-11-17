@@ -34,7 +34,6 @@ def valid_move?(board, position)
 end
 
 def turn(board)
-  puts "Please choose a number between 1-9:"
   user_input = gets.strip
   idx = input_to_index(user_input)
   if valid_move?(board, idx)
@@ -81,4 +80,8 @@ def winner(board)
   else
     nil
   end
+end
+
+def play(board)
+
 end
