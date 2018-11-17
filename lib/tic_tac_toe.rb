@@ -76,7 +76,7 @@ def winner(board)
   if current_player(board) == "O" && won?(board)
     "X"
   elsif current_player(board) == "X" && won?(board)
-    "X"
+    "O"
   elsif draw?(board)
     nil
   end
