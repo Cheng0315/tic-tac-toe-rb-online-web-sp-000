@@ -76,7 +76,7 @@ def winner(board)
   if WIN_COMBINATIONS.any? {|combination|
     board[combination[0]] == board[combination[1]] &&
     board[combination[1]]== board[combination[2]]}
-    board[combination[0]]
+    return board[combination[0]]
   else
     nil
   end
