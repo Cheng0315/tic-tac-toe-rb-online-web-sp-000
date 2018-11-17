@@ -88,7 +88,7 @@ def play(board)
     turn(board)
 
     if won?(board)
-      "Congratulations #{current_player(board)}"
+      "Congratulations #{winner(board)}"
     end
 
     if full?(board)
