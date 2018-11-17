@@ -75,7 +75,8 @@ end
 def winner(board)
   if win_combo = WIN_COMBINATIONS.detect { |combination|
     board[combination[0]] == board[combination[1]] &&
-    board[combination[1]]== board[combination[2]]}
+    board[combination[1]] == board[combination[2]] &&
+    board[combination[2]] != " "}
     board[win_combo[0]]
   else
     nil
