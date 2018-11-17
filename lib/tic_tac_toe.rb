@@ -77,7 +77,7 @@ def winner(board)
     board[combination[0]] == board[combination[1]] &&
     board[combination[1]]== board[combination[2]]}
     board[win_combo[0]]
-  elsif draw?(board)
+  else
     nil
   end
 end
