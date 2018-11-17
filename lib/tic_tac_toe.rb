@@ -90,4 +90,7 @@ def play(board)
       "Congratulations #{winner(board)}"
     end
   end
+  if draw(board)
+    "Cat's Game!"
+  end
 end
