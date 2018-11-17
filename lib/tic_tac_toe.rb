@@ -86,6 +86,9 @@ end
 def play(board)
   until over?(board) do
     turn(board)
+  end
 
+  if draw(board)
+    puts "Cat's Game!"
   end
 end
