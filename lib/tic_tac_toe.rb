@@ -87,9 +87,11 @@ def play(board)
   until over?(board) do
     turn(board)
 
-    if winner(board)
+    if won?(board)
       "Congratulations #{current_player(board)}"
-    elsif full(board)
+    end
+
+    if draw?(board)
       puts "Cat's Game!"
     end
   end
