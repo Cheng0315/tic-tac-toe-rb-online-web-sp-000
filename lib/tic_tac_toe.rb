@@ -73,10 +73,11 @@ def over?(board)
 end
 
 def winner(board)
-  if WIN_COMBINATIONS.any? {|combination|
+  if WIN_COMBINATIONS.any? do |combination|
     board[combination[0]] == board[combination[1]] &&
-    board[combination[1]]== board[combination[2]]}
+    board[combination[1]]== board[combination[2]]
     return board[combination[0]]
+  end
   else
     nil
   end
