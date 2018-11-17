@@ -73,10 +73,10 @@ def over?(board)
 end
 
 def winner(board)
-  if turn_count(board) % 2 == 0 && won?(board)
-    "X"
-  elsif turn_count(board) % 2 == 1 && won?(board)
+  if turn_count(board) % 2 == 1 && won?(board)
     "O"
+  elsif turn_count(board) % 2 == 0 && won?(board)
+    "X"
   elsif draw?(board)
     nil
   end
