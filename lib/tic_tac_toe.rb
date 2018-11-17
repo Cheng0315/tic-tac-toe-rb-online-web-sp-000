@@ -91,7 +91,7 @@ def play(board)
       "Congratulations #{current_player(board)}"
     end
 
-    if draw?(board)
+    if full?(board)
       puts "Cat's Game!"
     end
   end
