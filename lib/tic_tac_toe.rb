@@ -87,7 +87,7 @@ def play(board)
   until over?(board) do
     turn(board)
 
-    if won?(board)
+    if winner(board)
       "Congratulations #{current_player(board)}"
     end
 
