@@ -84,12 +84,9 @@ end
 
 def play(board)
   puts "Please choose a number between 1-9:"
-  over?(board) == false
-  until over?(board) == true do
     turn(board)
     if won?(board)
       winner(board)
     end
     draw?(board)
-  end
 end
